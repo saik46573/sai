@@ -1,0 +1,27 @@
+package Day5;
+
+public class a12b3c4 
+{
+
+	public static void main(String[] args)
+	{
+		String s="a12b7c9";
+		char c=' ';
+		String s2=" ";
+		int i=0;
+		for(int x=0;x<s.length();x++)
+		{
+			c=s.charAt(x);
+			if(Character.isDigit(c))
+			{
+				i=Character.getNumericValue(c);
+				for(int y=1;y<=i;y++)
+					s2=s2+s.charAt(x-1);
+					
+			}
+		}
+		System.out.println(s2);
+
+	}
+
+}

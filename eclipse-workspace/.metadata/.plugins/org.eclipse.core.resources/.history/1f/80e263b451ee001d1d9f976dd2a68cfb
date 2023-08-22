@@ -1,0 +1,25 @@
+package Day1;
+
+public class numberOfWords 
+{
+
+	public static void main(String[] args) 
+	{
+		int count=0;
+	  String s="   hello  all  good      hjjhm    afternoon ";
+	  for(int x=0;x<s.length();x++)
+	  {
+		  if(s.charAt(x)==' '&&s.charAt(x+1)!=' ')
+		  {
+			  count++;
+			  if(s.charAt(s.length()-1)==' ')
+				  break;
+		  }
+		
+		}
+	  System.out.println("number of words "+count);
+	  
+
+	}
+
+}

@@ -1,0 +1,71 @@
+import java.util.Arrays;
+
+public class next_smallest_number_in_sequence 
+{
+	public static void main(String[] args) 
+	{
+		String n=new String("534976");
+		char c[]=n.toCharArray();
+		int y,x,i,min=0;
+		for(x=c.length-1;x>0;x--)
+		{
+			if(c[x-1]<c[x])
+			{
+				y=c[x-1];
+				break;
+			}
+			
+		}
+		//System.out.println(x);
+		if(x==0)
+		{
+			System.out.println("element not possiable");
+		}
+		else
+		{
+			i=c[x-1];min=x;
+			for(int z=x;z<c.length;z++)
+			{
+				if(c[z]<c[min])
+				{
+					min=z;
+				}
+			}
+		}
+		char temp=' ';
+		if(min>x)
+		{
+			temp=c[x-1];
+			c[x-1]=c[min];
+			c[min]=temp;
+		}
+//		for(char t:c)
+//		{
+//			System.out.println(t);
+//		}
+		char l=c[x];
+		char m=' ';
+		for(int j=x;j<=min;j++)
+		{
+			for(int k=j+1;k<=min;k++)
+			{
+				if(l<c[k])
+				{
+				m=l;
+				l=c[k];
+				c[k]=m;
+				}
+				
+			}
+		}
+		for(char t:c)
+			{
+			System.out.println(t);
+		}
+		
+			
+				
+		
+	}
+
+}

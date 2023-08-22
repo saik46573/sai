@@ -1,0 +1,41 @@
+package day8;
+
+public class delection_of_dublicate_element {
+
+	public static void main(String[] args)
+	{
+		int a[]= {1,5,8,6,4,7,2,9,1,8,4,2};
+		boolean b[]=new boolean[a.length];
+		int x,y,count=1,index=0,c=0;
+		for(x=0;x<a.length;x++)
+		{
+			count=1;
+			if(b[x]==true)
+				continue;
+			for(y=x+1;y<a.length;y++)
+			{
+				if(a[x]==a[y])
+				{
+					index=y;
+					for(int i=index;i<a.length-1;i++)
+					a[i]=a[i+1];
+					b[y]=true;
+					count++;
+				}
+					
+			}
+			if(count>1)
+			{
+				System.out.println(a[x]+"--> "+count);
+				c++;
+			}
+		}
+		for(x=0;x<a.length-c;x++)
+		{
+			System.out.print(a[x]+" ");
+		}
+		System.out.println();
+
+	}
+
+}

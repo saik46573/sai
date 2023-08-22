@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+<servlet>
+	<servlet-name>rss</servlet-name>
+		<servlet-class>server.server1</servlet-class>
+</servlet>
+
+<servlet-mapping>
+		<servlet-name>rss</servlet-name>
+			<url-pattern>/dem2</url-pattern>
+</servlet-mapping>
+</web-app>

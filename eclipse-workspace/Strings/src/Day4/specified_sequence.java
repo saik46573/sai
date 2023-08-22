@@ -1,0 +1,13 @@
+package Day4;
+
+public class specified_sequence 
+{
+
+	public static void main(String[] args) 
+	{
+		String s="Hello All Good Morning";
+		String s1="All";
+		System.out.println(s.contains(s1));
+	}
+
+}

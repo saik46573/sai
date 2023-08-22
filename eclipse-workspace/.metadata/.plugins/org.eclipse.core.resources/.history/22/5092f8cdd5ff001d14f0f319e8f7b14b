@@ -1,0 +1,10 @@
+package Day6exam;
+
+public class biggest_number_from_given_number {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,50 @@
+package methods;
+
+import java.util.Scanner;
+
+public class PrimeArmstrong
+{
+
+	public static void main(String[] args)
+	{
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter the number");
+	  Prime p=new Prime();
+	 int b= p.calPrime(sc.nextInt());
+	 System.out.println(b);
+	String str= p.checkPrime(b);
+	System.out.println(str);
+	}
+
+}
+class Prime
+{
+	public int calPrime(int a)
+	{ 
+		int count=0;
+		for(int x=2;x<=a/2;x++)
+		{
+			if(a%x==0)
+			{
+				count++;
+				break;
+			}
+		}
+		return count;
+	}
+	public String checkPrime(int a)
+	{
+	 String s="";
+	 if(a==0)
+	 {
+		 s="prime";
+		 return s;
+	 }
+	 else
+	 {
+		 s="not prime";
+		 return s;
+	 }
+	 
+	}
+}

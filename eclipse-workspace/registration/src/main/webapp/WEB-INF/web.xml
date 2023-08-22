@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<servlet>
+		<servlet-name>servlet1</servlet-name>
+		<servlet-class>registration.RegistrationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servlet1</servlet-name>
+		<url-pattern>/app1</url-pattern>
+	</servlet-mapping>
+	<!-- servlet2 -->
+	<servlet>
+		<servlet-name>servlet2</servlet-name>
+		<servlet-class>registration.loginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servlet2</servlet-name>
+		<url-pattern>/app2</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
+

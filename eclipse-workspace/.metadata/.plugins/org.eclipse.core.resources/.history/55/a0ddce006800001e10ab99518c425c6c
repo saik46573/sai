@@ -1,0 +1,25 @@
+package exception1;
+
+public class userdefinedExcepstion 
+{
+	public static void main(String[] args)
+	{
+		int num=8576;
+		int rem=0,count=0,result=0;
+		for(int x=num;x>0;x/=10)
+		{
+			rem=x%10;
+			break;
+		}
+		for(int x=num;x>0;x/=10)
+		{
+			count++;
+		}
+		for(int x=count;x>0;x--)
+		{
+			rem=rem*10;
+		}
+		System.out.println(rem);
+	}
+
+}

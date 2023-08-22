@@ -1,0 +1,5 @@
+package DAO;
+
+public interface Bus_Reservation_Dao {
+
+}

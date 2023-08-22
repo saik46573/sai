@@ -1,0 +1,5 @@
+INDEX VERSION 1.134
+C:\Users\Dell\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4114514053.index
+\Project\src\main\resources
+C:\Users\Dell\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3372946660.index
+\Smart_city\src\main\resources

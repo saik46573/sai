@@ -1,0 +1,57 @@
+package DAO;
+
+import java.sql.*;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import Factory.*;
+import DTO.StudentDto;
+/*private String sname,smobile,semail;
+	int sroll;*/
+
+public class StudentImpl implements Student
+{
+	//insearting into database
+	public int insert(StudentDto s) throws ClassNotFoundException, SQLException 
+	{
+		Connection con=ConnectionFactory.getConnection();
+		PreparedStatement pst=con.prepareStatement("INSERT INTO STUDENT (SNAME,SROLL,SEMAIL,SMOBILE) VALUES (?,?,?,?);");
+		pst.setString(1,s.getSname());
+		pst.setInt(1,s.getSroll());
+		pst.setString(1,s.getSemail());
+		pst.setString(1,s.getSmobile());
+		int rows=pst.executeUpdate();
+		return rows;
+	}
+	//updating database
+	public int update(StudentDto s) throws ClassNotFoundException, SQLException 
+	{
+		Connection con=ConnectionFactory.getConnection();
+		PreparedStatement pst=con.prepareStatement("UPDATE STUDENT SET SNAME=?,SEMAIL=?,SMOBILE=? WHERE SROLL=? ;");
+		pst.setString(1,s.getSname());
+		pst.setString(2,s.getSemail());
+		pst.setString(3,s.getSmobile());
+		pst.setInt(4,s.getSroll());
+		int rows=pst.executeUpdate();
+		return rows;
+	}
+
+
+	public ResultSet view(StudentDto s) throws SQLException, ClassNotFoundException
+	{
+		Connection con=ConnectionFactory.getConnection();
+		PreparedStatement pst=con.prepareStatement("SELECT * FROM STUDENT");
+		ResultSet rs=pst.executeQuery();
+		return rs;
+	}
+
+	
+	public int delete(StudentDto s) throws SQLException, ClassNotFoundException 
+	{
+		Connection con=ConnectionFactory.getConnection();
+		PreparedStatement pst=con.prepareStatement("UPDATE STUDENT SET SNAME=?,SEMAIL=?,SMOBILE=? WHERE SROLL=? ;");
+		
+		return 0;
+	}
+
+}

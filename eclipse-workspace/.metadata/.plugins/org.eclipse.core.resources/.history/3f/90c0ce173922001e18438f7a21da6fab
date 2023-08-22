@@ -1,0 +1,18 @@
+package Controoler;
+
+import java.util.Scanner;
+
+import DTO.StudentDto;
+
+public class main 
+{
+
+	public static void main(String[] args)
+	{
+		StudentDto sd=new StudentDto();
+		Scanner sc=new Scanner(System.in);
+		System.out.println(" student functions");
+		System.out.println("Select the operations"+"/n"+"1.inserting"+"/n"+"2.updating"+"/n"+"3.viewing"+"/n"+"4.deleting");
+	}
+
+}

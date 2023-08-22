@@ -1,0 +1,31 @@
+package Day4;
+
+public class mul_string 
+{
+
+	public static void main(String[] args) 
+	{
+		String s="a16b2c3";
+		int y=0;
+		char c=' ';
+		String temp="";
+		for(int x=0;x<s.length();x++)
+		{
+			c=s.charAt(x);
+
+		if(Character.isDigit(c))
+		{
+			temp=temp+c;
+			
+		}
+		else
+		{
+			y=y+Integer.parseInt(temp);
+			temp="";
+		}
+		}
+		System.out.println(y);
+
+	}
+
+}

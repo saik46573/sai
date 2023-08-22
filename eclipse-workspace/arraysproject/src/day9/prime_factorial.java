@@ -1,0 +1,35 @@
+package day9;
+
+public class prime_factorial 
+{
+
+	public static void main(String[] args) 
+	{
+		int x,y,z,count=0,i=0,j=0;
+		int a[]= {10,20,30,40,6,4};
+		for(x=0;x<a.length;x++)
+		{
+			for(y=1;y<=a[x];y++)
+			{
+				if(a[x]%y==0)
+				{
+					count=0;
+					for(z=2;z<=y/2;z++)
+					{
+						if(y%z==0)
+							count++;
+					}
+					if(count==0)
+					{
+						i=y;
+					}
+				}
+			}
+			a[j]=i;
+			j++;
+		}
+		for(int r:a)
+			System.out.println(r);
+	}
+
+}

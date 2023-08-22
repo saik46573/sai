@@ -1,0 +1,33 @@
+package Day6exam;
+
+public class aabbbccc
+{
+
+	public static void main(String[] args)
+	{
+		String s=new String("aabbbccc");
+		int count=1;String s1=new String("");
+		for(int x=0;x<s.length()-1;x++)
+		{
+				for(int y=x+1;y<s.length();y++)
+				{
+					if(s.charAt(x)==s.charAt(y))
+					{
+					s1=s1+s.charAt(x);
+					count++;
+					}
+				else if(s.charAt(y)!=s.charAt(y+1)&&count>=2)
+					{
+					s1=s1+s.charAt(x)+count;
+					count=1;
+					break;
+					}
+				
+				}
+			
+		}
+		System.out.println(s1);
+
+	}
+
+}

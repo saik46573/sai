@@ -1,0 +1,10 @@
+package Day6exam;
+
+public class delete_dublicate_elements_in_the_string {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

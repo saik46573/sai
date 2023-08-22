@@ -1,0 +1,42 @@
+package DAO;
+import java.sql.*;
+import DTO.Bus_Reservation;
+import FACTORY.ConnectionFactory;
+
+public class Bus_Reservation_Impl implements Bus_Reservation_Dao 
+{
+
+	@Override
+	public int insert(Bus_Reservation B) throws ClassNotFoundException, SQLException 
+	{
+		Connection con=ConnectionFactory.getConnection();
+		
+		return 0;
+	}
+
+	@Override
+	public int update(Bus_Reservation B)
+	{
+
+
+		return 0;
+	}
+
+	@Override
+	public ResultSet view(Bus_Reservation B) 
+	{
+
+
+		return null;
+	}
+
+	@Override
+	public int delete(Bus_Reservation B) 
+	{
+
+
+		return 0;
+	}
+	
+
+}

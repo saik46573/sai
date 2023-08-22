@@ -1,0 +1,24 @@
+package first;
+
+import java.util.Scanner;
+
+public class Multilication 
+{
+
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number");
+		int n=sc.nextInt();
+		for (int x=1;x<=40;x++)
+		{
+			int m=(n*x);
+			//System.out.println(n+"*"+x+"="+m);
+			if(x%2!=0)
+				System.out.println(n+"*"+x+"="+m);
+			/*else
+				\\System.out.println(n+"*"+x+"="+m);*/
+		}
+	}
+
+}

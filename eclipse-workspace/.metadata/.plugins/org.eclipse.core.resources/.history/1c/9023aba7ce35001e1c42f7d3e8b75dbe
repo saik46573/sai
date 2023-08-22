@@ -1,0 +1,32 @@
+<html>
+<body>
+<h2>Login </h2>
+<form action="login" method="post">
+	<table>
+	<tr>
+	<td>USER NAME</td>
+	<td> <input type= "text" ></td>
+	</tr>
+	<tr>
+	<td>PASSWORD</td>
+	<td> <input type= "text" ></td>
+	</tr>
+	<tr>
+	<td><input type="submit" value="login"></td>
+	<td> <input type= "submit" value="cancel"></td>
+	</tr>
+	<tr>
+	<td>  NOT AT REGISTER  </td>
+	</tr>
+	<tr>
+	<td>   </td>
+	<td>NOT AT REGISTER</td>
+	</tr>
+	<tr>
+	<td><input type="submit" value="Admin"></td>
+	<td> <input type= "submit" value="seller"></td>
+	</tr>
+	</table>
+</form>
+</body>
+</html>

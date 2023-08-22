@@ -1,0 +1,23 @@
+package multi_threading;
+
+public class implementing_Runnable 
+{
+
+	public static void main(String[] args) 
+	{
+		test t=new test();
+		Thread t1=new Thread();
+		t1.start();
+		for(int x=0;x<10;x++)
+			System.out.println("thread 2");
+	}
+
+}
+class test implements Runnable
+{
+	public void run()
+	{
+		for(int x=0;x<10;x++)
+			System.out.println("thread 1");
+	}
+}

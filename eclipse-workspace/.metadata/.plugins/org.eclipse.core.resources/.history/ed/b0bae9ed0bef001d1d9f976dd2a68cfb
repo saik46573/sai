@@ -1,0 +1,41 @@
+package Day5;
+
+public class a12b3c4 
+{
+
+	public static void main(String[] args)
+	{
+		String s="a12b7c9";
+		char c=' ';
+		String s2=" ";
+		int i=0;
+		int y=0,count=0;
+		for(int x=0;x<s.length();x++)
+		{
+			c=s.charAt(x);
+			if(Character.isAlphabetic(c))
+			{
+				count=0;
+			}
+			else
+			{
+				//i=Character.getNumericValue(c);
+				count++;
+			}
+				if(count==2)
+				{
+					i=Character.getNumericValue(s.charAt(x-1));
+					i=i*10+Character.getNumericValue(s.charAt(x));
+				}
+				else
+				{
+					i=Character.getNumericValue(s.charAt(x));
+				}
+				for(int z=1;z<=i;z++)
+					s2=s2+c;
+		}
+		System.out.println(s2);
+
+	}
+
+}

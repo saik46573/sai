@@ -1,0 +1,35 @@
+package Day4;
+
+public class mul_string 
+{
+
+	public static void main(String[] args) 
+	{
+		String s="a16b2c3";
+		int y=0;
+		char c[]=s.toCharArray();
+		for(char d:c)
+			System.out.print(d+" ");
+		System.out.println(" ");
+		for(int x=0;x<c.length-1;x++)
+		{
+			if(c[x]>='0'&&c[x]<='9'&&c[x+1]>='0'&&c[x+1]<='9')
+			{
+				y=y+(Character.getNumericValue(c[x])*10)+Character.getNumericValue(c[x+1]);
+				c[x+1]=0;
+			}
+			else if(c[x]>='0'&&c[x]<='9')
+			{
+				y=y+Character.getNumericValue(c[x]);
+			}
+			else
+			{
+				continue;
+			}
+			
+		}
+		System.out.println(y);
+
+	}
+
+}

@@ -1,0 +1,126 @@
+package Controoler;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+import DTO.StudentDto;
+import Service.ServiceConnectionFactory;
+import Service.StudentServiceImpl;
+
+public class main 
+{
+
+	public static void main(String[] args) throws ClassNotFoundException, SQLException
+	{ 
+	
+		StudentDto sd=new StudentDto();
+		Scanner sc=new Scanner(System.in);
+		System.out.println(" 		student functions");
+		while(true)
+		{
+		System.out.println("Select the operations"+"\n"+"1.inserting"+"  "+"2.updating"+"  "+"3.viewing"+"  "+"4.deleting");
+		System.out.println("-------------------------------------------------------------");
+		System.out.println("enter the requried option");
+		 int n=sc.nextInt();
+	
+		switch(n)
+		{
+		case 1:
+		{
+			System.out.println("enter the student name");
+			String sname1=sc.next();
+			System.out.println("enter the student roll");
+			int sroll1=sc.nextInt();
+			System.out.println("enter the student email");
+			String semail1=sc.next();
+			System.out.println("enter the student mobile");
+			String smobile1=sc.next();
+			sd.setSname(sname1);
+			sd.setSroll(sroll1);
+			sd.setSemail(semail1);
+			sd.setSmobile(smobile1);
+			StudentServiceImpl ssi=ServiceConnectionFactory.getService();
+			int rows=ssi.insertstudent(sd);
+			System.out.println();
+			if(rows>0)
+			{
+				System.out.println("Query ok"+rows+"rows affected");
+			}
+			break;
+		}
+		case 2:
+		{
+			System.out.println("enter the student name");
+			String sname1=sc.next();
+			System.out.println("enter the student roll");
+			int sroll1=sc.nextInt();
+			System.out.println("enter the student email");
+			String semail1=sc.next();
+			System.out.println("enter the student mobile");
+			String smobile1=sc.next();
+			sd.setSname(sname1);
+			sd.setSroll(sroll1);
+			sd.setSemail(semail1);
+			sd.setSmobile(smobile1);
+			StudentServiceImpl ssi=ServiceConnectionFactory.getService();
+			int rows=ssi.updatestudent(sd);
+			if(rows>0)
+			{
+				System.out.println("Query ok"+rows+"rows affected");
+			}
+			break;
+		}
+		case 3:
+		{
+//			System.out.println("enter the student name");
+//			String sname1=sc.next();
+//			System.out.println("enter the student roll");
+//			int sroll1=sc.nextInt();
+//			System.out.println("enter the student email");
+//			String semail1=sc.next();
+//			System.out.println("enter the student mobile");
+//			String smobile1=sc.next();
+			StudentServiceImpl ssi=ServiceConnectionFactory.getService();
+			ResultSet rs=ssi.viewstudent(sd);
+			 System.out.println("sname\t	sroll\t		semail\t		smobile\t");
+			 while(rs.next())
+			 {
+				 System.out.print(rs.getString(1)+"\t	");
+				 System.out.print(rs.getInt(2)+"\t		");
+				 System.out.print(rs.getString(3)+"\t		");
+				 System.out.print(rs.getString(4)+"\t");
+				 System.out.println();
+			 }
+			 
+				break;
+		}
+		case 4:
+		{
+			System.out.println("enter the student name");
+			String sname1=sc.next();
+			System.out.println("enter the student roll");
+			int sroll1=sc.nextInt();
+			System.out.println("enter the student email");
+			String semail1=sc.next();
+			System.out.println("enter the student mobile");
+			String smobile1=sc.next();
+			sd.setSname(sname1);
+			sd.setSroll(sroll1);
+			sd.setSemail(semail1);
+			sd.setSmobile(smobile1);
+			StudentServiceImpl ssi=ServiceConnectionFactory.getService();
+			int rows=ssi.deletestudent(sd);
+			if(rows>0)
+			{
+				System.out.println("Query ok"+rows+"rows affected");
+			}
+				break;	
+		}			
+			
+		}
+	}
+	}
+	
+
+}

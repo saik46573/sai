@@ -1,0 +1,37 @@
+package DAO;
+
+import java.sql.*;
+
+import DTO.Bean;
+import factory.factoryclass;
+
+public class ProductDaoimpl implements productDao
+{
+@Override
+	public String add(Bean b) throws ClassNotFoundException, SQLException 
+	{
+	Connection con=factoryclass.getConnection();
+		
+		return null;
+	}
+
+	@Override
+	public String update(Bean b) 
+	{
+		
+		return null;
+	}
+
+	@Override
+	public void view(String pid)
+	{
+		
+		
+	}
+
+	@Override
+	public String delete(String pid)
+	{
+		
+		return null;
+	}

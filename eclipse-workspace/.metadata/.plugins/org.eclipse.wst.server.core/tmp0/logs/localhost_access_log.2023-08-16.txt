@@ -1,0 +1,16 @@
+127.0.0.1 - - [16/Aug/2023:15:46:21 +0530] "GET /Project/AdminLogin.jsp HTTP/1.1" 200 1020
+127.0.0.1 - - [16/Aug/2023:15:46:25 +0530] "GET /Project/index.jsp HTTP/1.1" 200 886
+127.0.0.1 - - [16/Aug/2023:15:46:30 +0530] "GET /Project/SellerLogin.jsp HTTP/1.1" 200 1010
+127.0.0.1 - - [16/Aug/2023:15:46:36 +0530] "POST /Project/SellerLogin HTTP/1.1" 404 774
+127.0.0.1 - - [16/Aug/2023:15:46:40 +0530] "GET /Project/AdminLogin.jsp HTTP/1.1" 200 1020
+127.0.0.1 - - [16/Aug/2023:15:46:49 +0530] "POST /Project/Adminlogin HTTP/1.1" 404 773
+127.0.0.1 - - [16/Aug/2023:15:46:58 +0530] "GET /Project/AdminRegistration.jsp HTTP/1.1" 200 884
+127.0.0.1 - - [16/Aug/2023:15:47:02 +0530] "GET /Project/AdminLogin.jsp HTTP/1.1" 200 1020
+127.0.0.1 - - [16/Aug/2023:15:47:03 +0530] "GET /Project/AdminLogin.jsp HTTP/1.1" 200 1020
+127.0.0.1 - - [16/Aug/2023:15:47:11 +0530] "GET /Project/AdminLogin.jsp HTTP/1.1" 200 1020
+127.0.0.1 - - [16/Aug/2023:15:48:47 +0530] "GET /Project/Registration.jsp HTTP/1.1" 200 847
+127.0.0.1 - - [16/Aug/2023:15:48:58 +0530] "GET /Project/servlet/adminUser.UserAdminLogin HTTP/1.1" 404 799
+127.0.0.1 - - [16/Aug/2023:15:49:03 +0530] "GET /Project/servlet/adminUser.UserAdminLogin HTTP/1.1" 404 799
+127.0.0.1 - - [16/Aug/2023:15:49:05 +0530] "GET /Project/servlet/adminUser.UserAdminLogin HTTP/1.1" 404 799
+127.0.0.1 - - [16/Aug/2023:15:49:16 +0530] "POST /Project/Adminlogin HTTP/1.1" 404 773
+127.0.0.1 - - [16/Aug/2023:15:49:50 +0530] "GET / HTTP/1.1" 404 751

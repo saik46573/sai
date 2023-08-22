@@ -1,0 +1,10 @@
+package Day4;
+
+public class compare_two_strings {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

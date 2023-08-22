@@ -1,0 +1,13 @@
+package DAO;
+
+public class connection_Bus_Reservation 
+{
+	static Bus_Reservation_Impl Br=new Bus_Reservation_Impl();
+  public static connection_Bus_Reservation getConnection()
+  {
+	return Br;
+	  
+  }
+
+
+}

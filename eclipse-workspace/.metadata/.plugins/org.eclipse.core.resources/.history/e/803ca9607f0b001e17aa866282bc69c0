@@ -1,0 +1,39 @@
+package day7;
+
+public class Bubblesort1for
+{
+
+	public static void main(String[] args)
+	{
+		int a[]= {1,5,8,6,4,7,2,9};
+		int x,y,n=a.length-1,temp,count=0;
+		while(count>=0)
+		{
+			for(x=0;x<n-count;x++)
+			{
+				if(a[x]>a[x+1])
+				{
+					temp=a[x];
+					a[x]=a[x+1];
+					a[x+1]=temp;
+					
+				}
+				
+			
+			}
+			count++;
+			//if(n==0)
+				//break;
+		}
+		
+		
+		for(int r:a)
+		{
+			System.out.println(r);
+		}
+
+		}
+
+	}
+
+

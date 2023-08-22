@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;day1.day1.java&apos; to &apos;evenposition.java&apos;&#x0D;&#x0A;- Original project: &apos;arraysproject&apos;&#x0D;&#x0A;- Original element: &apos;day1.day1.java&apos;&#x0D;&#x0A;- Renamed element: &apos;day1.evenposition.java&apos;" description="Rename compilation unit &apos;day1.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;day1{day1.java" name="evenposition.java" references="false" stamp="1682327524929" version="1.0"/>
+</session>

@@ -1,0 +1,30 @@
+package Day2;
+
+public class string_ascending
+{
+
+	public static void main(String[] args) 
+	{
+		String s="ApPle";
+		String s1="";
+		int temp=0;
+		for(int x=0;x<s.length()-1;x++)
+		{
+          for(int y=x+1;x<s.length();y++)
+          {
+        	  if(s.charAt(x)<s.charAt(y))
+        	  {
+        		  s1=s1+s.charAt(x);
+        	  }
+        	  else
+        	  {
+        		  continue;
+        	  }
+        	  
+          }
+		}
+		System.out.println(s1);
+
+	}
+
+}

@@ -1,0 +1,45 @@
+package methods;
+class product1
+{
+	String name="product";
+	int q=5;
+	double p=1500,d=0,t=0,ft=0;
+	public void total()
+	{
+		t=p*q;
+		System.out.println(t);
+	}
+	public void discount()
+	{
+		if(p>=5000)
+		{
+			d=(15/100.0)*t;
+			System.out.println(d);
+		}
+		else 
+		{
+			d=(5/100.0)*t;
+			System.out.println(d);
+		}
+	}
+	public void finaltotal()
+	{
+		ft=t-d;
+		System.out.println(ft);
+	}
+}
+
+public class product
+{
+
+	public static void main(String[] args) 
+	{
+		product1 p1=new product1();
+		p1.total();
+		p1.discount();
+		p1.finaltotal();
+		
+		
+	}
+
+}

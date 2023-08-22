@@ -1,0 +1,40 @@
+
+public class next_smallest_number_in_sequence 
+{
+	public static void main(String[] args) 
+	{
+		String n=new String("534976");
+		char c[]=n.toCharArray();
+		int y,x,i,min;
+		for(x=c.length-1;x>0;x--)
+		{
+			if(c[x-1]<c[x])
+			{
+				y=c[x-1];
+				break;
+			}
+			
+		}
+		if(x==0)
+		{
+			System.out.println("element not possiable");
+		}
+		else
+		{
+			i=c[x-1];min=x;
+			for(int z=x;z<c.length;z++)
+			{
+				if(c[z]<i)
+				{
+					min=z;
+				}
+			}
+			System.out.println(min);
+		}
+		
+			
+				
+		
+	}
+
+}

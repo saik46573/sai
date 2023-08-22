@@ -1,0 +1,29 @@
+package Day5;
+
+public class aabbbccc 
+{
+
+	public static void main(String[] args) 
+	{
+		String s="aabbbccc";
+		char c[]=s.toCharArray();
+		int count=0;
+		for(char r:c)
+			System.out.print(r+" ");
+		for(int x=0;x<c.length;x=x+count)
+		{
+			count=0;
+			for(int y=0;y<c.length;y++)
+			{
+				if(c[x]==c[y])
+				{
+					count++;
+				}
+			}
+			System.out.println(c[x]+" "+count);
+			
+		}
+
+	}
+
+}

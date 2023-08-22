@@ -1,0 +1,12 @@
+package jdbc1;
+
+public class preparedStatement
+{
+
+	public static void main(String[] args) throws Exception 
+	{
+		DAO.data();
+
+	}
+
+}

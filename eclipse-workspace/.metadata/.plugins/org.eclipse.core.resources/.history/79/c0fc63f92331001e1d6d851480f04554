@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="dem2" method="post">
+		<label>enter the number</label>
+		<input type="text" name="form">
+		<input type="submit" value="go">
+	</form>
+</body>
+</html>

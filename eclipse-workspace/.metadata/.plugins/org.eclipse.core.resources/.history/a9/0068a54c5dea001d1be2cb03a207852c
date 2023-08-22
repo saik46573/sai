@@ -1,0 +1,25 @@
+package day9;
+
+public class second_Largest
+{
+	public static void main(String[] args) 
+	{
+		int a[]= {9,8,7,6,5,4,3,2};
+		int f,s,x;
+		f=s=a[0];
+		for(x=0;x<a.length;x++)
+		{
+			if(f<=a[x])
+			{
+				s=f;f=a[x];
+			}
+			else if(f>a[x]&&s<a[x])
+			{
+				s=a[x];
+			}
+		}
+		System.out.println(f);
+		System.out.println(s);
+	}
+
+}

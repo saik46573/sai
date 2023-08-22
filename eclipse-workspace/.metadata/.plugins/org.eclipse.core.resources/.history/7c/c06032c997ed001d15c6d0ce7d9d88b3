@@ -1,0 +1,22 @@
+package Day3;
+
+public class string_numeric_values_addtion 
+{
+
+	public static void main(String[] args) 
+	{
+	 String s="a1b23c3d4e5hf";
+	 int sum=0;
+	 for(int x=0;x<s.length();x++)
+		{
+		 if(s.charAt(x)>='0'&&s.charAt(x)<='9')
+		 {
+			 int u=s.charAt(x);
+			 sum=sum+(char)u;
+		 }
+		 
+		}
+	 System.out.println(sum);
+	}
+
+}

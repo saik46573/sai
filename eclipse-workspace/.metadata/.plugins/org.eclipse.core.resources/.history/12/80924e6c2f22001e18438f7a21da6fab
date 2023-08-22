@@ -1,0 +1,13 @@
+package DAO;
+
+import java.sql.ResultSet;
+
+public interface Student 
+{
+	public int insert(Student s);
+	public int update(Student s);
+	public ResultSet view(Student s	);
+	public int delete(Student s);
+	
+
+}

@@ -1,0 +1,40 @@
+package methods;
+
+import java.util.Scanner;
+
+public class Addprimefactors 
+{
+
+	public static void main(String[] args)
+	{
+		extract c=new extract();
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the number");
+		 int q=sc.nextInt();
+		 int d=c.e1(q);
+		 System.out.println(d);
+		
+		
+
+	}
+
+}
+class extract
+{
+	public int e1(int a)
+	{
+		int rem=0;
+		for(int x=1;x<=5;x++)
+		{
+			
+			for(int i=a;i>0;i/=10)
+			{
+				rem=i%10;
+				//System.out.println(rem);
+			}
+		
+			System.out.println(rem);
+		}
+		return rem;
+	}
+}

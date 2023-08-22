@@ -1,0 +1,36 @@
+package SERVICE;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import DAO.ProductDaoFactory;
+import DAO.productDao;
+import DTO.Bean;
+
+public class serviceImpl implements productService
+{
+
+	@Override
+	public String addProduct(Bean b) throws ClassNotFoundException, SQLException
+	{
+		productDao ProductDao;
+		ProductDao=ProductDaoFactory.getProductDao();
+		return null;
+	}
+
+	@Override
+	public String updateProduct(Bean b) throws ClassNotFoundException, SQLException {
+		return null;
+	}
+
+	@Override
+	public ResultSet viewProduct(String pid) throws ClassNotFoundException, SQLException {
+		return null;
+	}
+
+	@Override
+	public String deleteProduct(String pid) throws ClassNotFoundException, SQLException {
+		return null;
+	}
+
+}

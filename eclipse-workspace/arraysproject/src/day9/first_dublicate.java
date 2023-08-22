@@ -1,0 +1,31 @@
+package day9;
+
+public class first_dublicate 
+{
+
+	public static void main(String[] args)
+	{
+		int a[]= {1,2,1,3,4,5,6,7,6};
+		int x,y,count=0;
+		for(x=0;x<a.length-1;x++)
+		{
+			for(y=x+1;y<a.length;y++)
+			{
+				if(a[x]==a[y]&&x!=y)
+				{
+					count++;
+				}
+				
+			}
+			if(count==1) 
+			{
+				System.out.println("first dublicate element  "+a[x]);
+				break;
+			}
+			
+		}
+		
+		
+	}
+
+}

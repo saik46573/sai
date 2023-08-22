@@ -1,0 +1,27 @@
+package Day1;
+
+public class string_ascii 
+{
+
+	public static void main(String[] args)
+	{
+		String s="aPPle";
+		String s1="";
+		for(int x=0;x<s.length();x++)
+		{
+			if(s.charAt(x)>='A'&&s.charAt(x)>='Z')
+			{
+				int a=s.charAt(x);
+				s1=s1+(a+32);
+			}
+			else
+			{
+				int a=s.charAt(x);
+				s1=s1+(a-32);
+			}
+		}
+		System.out.println(s1);
+			
+	}
+
+}

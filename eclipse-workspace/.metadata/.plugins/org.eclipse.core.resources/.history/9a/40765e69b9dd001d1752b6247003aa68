@@ -1,0 +1,38 @@
+package methods;
+class Palindrome1
+{
+	int n,rem,rev;
+	public void Palin()
+	{
+		for(int y=n;y>0;y/=10)
+		{
+			rem=y%10;
+			rev=rev*10+rem;
+		}
+	}
+	public void checkPalin()
+	{
+		if(rev==n)
+		{
+			System.out.println("palin drome");
+		}
+		else
+		{
+			System.out.println("not a palindrome");
+		}
+	}
+}
+
+public class Palindrome 
+{
+
+	public static void main(String[] args)
+	{
+		Palindrome1 p=new Palindrome1();
+		p.n=121;
+		p.Palin();
+		p.checkPalin();
+
+	}
+
+}

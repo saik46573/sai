@@ -1,0 +1,66 @@
+package DAO;
+import java.sql.*;
+import DTO.Bus_Reservation;
+import FACTORY.ConnectionFactory;
+
+public class Bus_Reservation_Impl implements Bus_Reservation_Dao 
+{
+
+	@Override
+	public int insert(Bus_Reservation B) throws ClassNotFoundException, SQLException 
+	{
+		Connection con=ConnectionFactory.getConnection();
+		PreparedStatement pst=con.prepareStatement
+				("INSERT INTO Bus_Reservation(Reservation_id,Bus_No,Passenger_name,mobile_no,FromLocation"
+						+ "ToLocation,Ticket_No,Ticket_Price) VALUES (?,?,?,?,?,?,?,?);");
+			pst.setInt(1,B.getReservation_id());
+			pst.setString(2,B.getBus_No());
+			pst.setString(3,B.getPassenger_name());
+			pst.setDouble(4, B.getMobile_no());
+			pst.setString(5, B.getFromLocation());
+			pst.setString(6,B.getToLocation());
+			pst.setInt(7,B.getTicket_No() );
+			pst.setDouble(8,B.getTicket_Price());	
+			int rows=pst.executeUpdate();
+		return rows;
+	}
+	@Override
+	public int update(Bus_Reservation B) throws ClassNotFoundException, SQLException
+	{
+		Connection con=ConnectionFactory.getConnection();
+		PreparedStatement pst=con.prepareStatement
+				("INSERT INTO Bus_Reservation(Reservation_id,Bus_No,Passenger_name,mobile_no,FromLocation"
+						+ "ToLocation,Ticket_No,Ticket_Price) VALUES (?,?,?,?,?,?,?,?);");
+			pst.setInt(1,B.getReservation_id());
+			pst.setString(2,B.getBus_No());
+			pst.setString(3,B.getPassenger_name());
+			pst.setDouble(4, B.getMobile_no());
+			pst.setString(5, B.getFromLocation());
+			pst.setString(6,B.getToLocation());
+			pst.setInt(7,B.getTicket_No() );
+			pst.setDouble(8,B.getTicket_Price());	
+			int rows=pst.executeUpdate();
+		return rows;
+
+
+		return 0;
+	}
+
+	@Override
+	public ResultSet view(Bus_Reservation B) 
+	{
+
+
+		return null;
+	}
+
+	@Override
+	public int delete(Bus_Reservation B) 
+	{
+
+
+		return 0;
+	}
+	
+
+}

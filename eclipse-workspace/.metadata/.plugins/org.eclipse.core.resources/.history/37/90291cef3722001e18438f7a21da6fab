@@ -1,0 +1,10 @@
+package Service;
+
+public class ServiceConnectionFactory
+{
+	public static StudentServiceimpl student=new  StudentServiceimpl()
+			{
+		
+			}
+
+}

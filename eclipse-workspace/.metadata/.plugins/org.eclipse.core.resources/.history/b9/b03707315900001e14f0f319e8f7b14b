@@ -1,0 +1,20 @@
+
+public class next_smallest_number_in_sequence 
+{
+	public static void main(String[] args) 
+	{
+		StringBuffer n=new StringBuffer("7824");
+		int x=Character.getNumericValue(n.charAt(n.length()-3));
+		int y=Character.getNumericValue(n.charAt(n.length()-2));
+		int z=Character.getNumericValue(n.charAt(n.length()-1));
+		System.out.println(x+""+y+""+""+z);
+		if(y>z)
+		{
+			
+		}
+			
+				
+		
+	}
+
+}

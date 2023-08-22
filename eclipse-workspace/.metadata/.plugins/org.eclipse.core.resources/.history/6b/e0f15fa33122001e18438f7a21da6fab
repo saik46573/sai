@@ -1,0 +1,49 @@
+package DAO;
+
+import java.sql.*;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import Factory.*;
+import DTO.StudentDto;
+/*private String sname,smobile,semail;
+	int sroll;*/
+
+public class StudentImpl implements Student
+{
+	//insearting into database
+	public int insert(StudentDto s) throws ClassNotFoundException, SQLException 
+	{
+		Connection con=ConnectionFactory.getConnection();
+		PreparedStatement pst=con.prepareStatement("INSERT INTO STUDENT (SNAME,SROLL,SEMAIL,SMOBILE) VALUES (?,?,?,?);");
+		pst.setString(1,s.getSname());
+		pst.setInt(1,s.getSroll());
+		pst.setString(1,s.getSemail());
+		pst.setString(1,s.getSmobile());
+		int rows=pst.executeUpdate();
+		return rows;
+	}
+	//updating database
+	public int update(StudentDto s) throws ClassNotFoundException, SQLException 
+	{
+		Connection con=ConnectionFactory.getConnection();
+		PreparedStatement pst=con.prepareStatement("INSERT INTO STUDENT (SNAME,SROLL,SEMAIL,SMOBILE) VALUES (?,?,?,?);");
+		
+		return 0;
+	}
+
+
+	public ResultSet view(StudentDto s)
+	{
+		
+		return null;
+	}
+
+	
+	public int delete(StudentDto s) 
+	{
+		
+		return 0;
+	}
+
+}

@@ -1,0 +1,30 @@
+package Day3;
+
+public class concata 
+{
+
+public static void main(String[] args)
+	{
+		
+			con c=new con();
+			String s="hello";
+			String s1="java";
+			String d=c.conca(s, s1);
+			System.out.println(d);
+	}
+
+}
+class con
+	{
+		public String conca(String s,String s1)
+		{
+			String s3=s.concat(s1);
+			return s3;
+		}
+
+		
+	}
+
+
+
+

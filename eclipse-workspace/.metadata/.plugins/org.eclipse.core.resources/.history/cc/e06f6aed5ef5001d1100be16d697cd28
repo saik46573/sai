@@ -1,0 +1,97 @@
+package day1;
+
+import java.util.Scanner;
+
+public class interface_day1 
+{
+
+	public static void main(String[] args) 
+	{
+		
+
+	}
+
+}
+interface a
+{
+	public void name();
+	public void role();
+	public void id();
+	public void price();
+}
+class fulltime implements a
+{
+	Scanner sc =new Scanner(System.in);
+	String role,name;
+	int id,days;
+	double prices,cost;
+	fulltime()
+	{
+		System.out.println("enter the name");	
+		String name =sc.next();
+		System.out.println("enter the id");	
+		int id =sc.nextInt();
+		System.out.println("enter the role");	
+		String role =sc.next();	
+		System.out.println("enter number hours");	
+		int days =sc.nextInt();
+		System.out.println("price");	
+		double prices =sc.nextDouble();
+	}
+	public void name()
+	{
+	System.out.println(name);
+	}
+	public void role()
+	{
+		System.out.println(role);
+	}
+	public void id()
+	{
+		System.out.println(id);
+	}
+	public void price()
+	{
+		cost=days*prices;
+		System.out.println(cost);
+	}
+	
+}
+class parttime implements a
+{
+	Scanner sc =new Scanner(System.in);
+	String role,name;
+	int id,hours;
+	double prices,cost;
+	parttime()
+	{
+		System.out.println("enter the name");	
+		String name =sc.next();
+		System.out.println("enter the id");	
+		int id =sc.nextInt();
+		System.out.println("enter the role");	
+		String role =sc.next();	
+		System.out.println("enter number hours");	
+		int hours =sc.nextInt();
+		System.out.println("price");	
+		double prices =sc.nextDouble();
+	}
+	public void name()
+	{
+	System.out.println(name);
+	}
+	public void role()
+	{
+		System.out.println(role);
+	}
+	public void id()
+	{
+		System.out.println(id);
+	}
+	public void price()
+	{
+		cost=hours*prices;
+		System.out.println(cost);
+	}
+	
+}

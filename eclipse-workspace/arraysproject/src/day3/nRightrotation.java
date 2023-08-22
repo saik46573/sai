@@ -1,0 +1,29 @@
+package day3;
+
+import java.util.Scanner;
+
+public class nRightrotation
+{
+
+	public static void main(String[] args) 
+	
+	{
+	Scanner sc=new Scanner(System.in);
+	int a[]=new int[] {10,20,30,40,50,60};
+	int x,temp=0,y;
+	System.out.println("enter the number of rotations");
+	int n=sc.nextInt();
+	for(y=1;y<=n;y++)
+	{
+		temp=a[a.length-1];
+	for(x=a.length-1;x>0;x--)
+		a[x]=a[x-1];
+	    a[0]=temp;
+	}
+	for(int r:a)
+		System.out.println(r);	
+		
+
+	}
+
+}

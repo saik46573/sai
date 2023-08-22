@@ -1,0 +1,20 @@
+package methods;
+
+public class PrimeArmstrong
+{
+
+	public static void main(String[] args)
+	{
+	Scanner sc=new Scanner(System.in);
+	  Prime p=new Prime();
+	  p.calPrime()
+	}
+
+}
+class Prime
+{
+	public int calPrime(int a)
+	{
+		return
+	}
+}

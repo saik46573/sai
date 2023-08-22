@@ -1,0 +1,80 @@
+package methods;
+
+import java.util.Scanner;
+
+public class PrimeArmstrong
+{
+
+	public static void main(String[] args)
+	{
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter the number");
+	  Prime p=new Prime();
+	  int q=sc.nextInt();
+	 int b= p.calPrime(q);
+	// System.out.println(b);
+	String str= p.checkPrime(b);
+	System.out.println(str);
+	if(str.equals("prime"))
+	{
+		int d=(int)p.calArmstrong(q);
+		System.out.println(d);
+		if(q==d)
+		{
+			System.out.println("armstrong number");
+		}
+		else
+		{
+			System.out.println("not a armstrong number");
+		}
+	}
+	}
+
+}
+class Prime
+{
+	public int calPrime(int a)
+	{ 
+		int count=0;
+		for(int x=2;x<=a/2;x++)
+		{
+			if(a%x==0)
+			{
+				count++;
+				break;
+			}
+		}
+		return count;
+	}
+	public String checkPrime(int a)
+	{
+	 String s="";
+	 if(a==0)
+	 {
+		 s="prime";
+		 return s;
+	 }
+	 else
+	 {
+		 s="not prime";
+		 return s;
+	 }
+	 
+	}
+	public double calArmstrong(int s)
+	{
+		int rev=0,count=0;double sum=0;
+		for(int x=s;x>0;x/=10)
+		{
+			int rem=x%10;
+			count++;
+		}
+		for(int y=s;y>0;y/=10)
+		{
+			int rem=y%10;
+			sum=sum+Math.pow(rem,count);
+		}
+		
+		return sum;
+	}
+}

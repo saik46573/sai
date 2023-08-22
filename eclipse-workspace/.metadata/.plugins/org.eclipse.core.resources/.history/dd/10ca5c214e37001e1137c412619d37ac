@@ -1,0 +1,18 @@
+package registrationUser;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import connection.ConnectionFactory;
+
+public class UserRegisterDao 
+{
+	public static int userRegister() throws ClassNotFoundException, SQLException
+	{
+		Connection con=ConnectionFactory.getConnection();
+		PreparedStatement pst=con.prepareStatement("");
+		return 0;
+	}
+
+}

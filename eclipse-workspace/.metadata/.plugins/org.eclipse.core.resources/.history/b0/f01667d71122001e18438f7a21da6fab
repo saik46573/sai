@@ -1,0 +1,12 @@
+package FACTORY;
+import java.sql.*;
+
+public class connection
+{
+	public connection getconnection()
+	{
+		class.fo
+		
+	}
+
+}

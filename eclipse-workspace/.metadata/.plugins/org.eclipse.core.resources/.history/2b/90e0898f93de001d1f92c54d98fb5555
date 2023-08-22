@@ -1,0 +1,24 @@
+package methods;
+
+import java.util.Scanner;
+
+public class PrimeArmstrong
+{
+
+	public static void main(String[] args)
+	{
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter the number");
+	  Prime p=new Prime();
+	 int b= p.calPrime(sc.nextInt());
+	 System.out.println(b);
+	}
+
+}
+class Prime
+{
+	public int calPrime(int a)
+	{
+		return a;
+	}
+}

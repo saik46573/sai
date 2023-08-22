@@ -1,0 +1,12 @@
+package DAO;
+
+import DTO.Bean;
+
+public interface productDao 
+{
+	public String add(Bean b);
+	public String update(Bean b);
+	public void view(String pid);
+	public String delete(String pid);
+
+}

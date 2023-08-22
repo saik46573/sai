@@ -1,0 +1,36 @@
+package Day4;
+
+public class largest_smallest 
+{
+
+	public static void main(String[] args)
+	{
+		String s="Hello All Good Morning";
+		String s1[]=s.split(" ");
+		int max=0,min=0,count=0,i=0,j=0;
+		for(int x=0;x<s1.length;x++)
+		{
+			max=0;min=0;count=0;
+			for(int y=0;y<s1[x].length();y++)
+			{
+				count++;
+			}
+			if(max<count)
+			{
+				max=count;
+				i=x;
+				
+			}
+			if(min>count)
+			{
+				min=count;
+				j=x;
+			}
+		}
+		System.out.println("biggest elment is "+s1[i]+" and its length ==>"+max);
+		System.out.println("smallest elment is "+s1[j]+" and its length ==>"+min);
+		
+
+	}
+
+}

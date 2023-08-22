@@ -1,0 +1,21 @@
+package Day4;
+
+public class character_get
+{
+
+	public static void main(String[] args)
+	{
+		int mul=1;
+		String s="h1e41y";
+		for(int x=0;x<s.length();x++)
+		{
+			if(s.charAt(x)>='0'&&s.charAt(x)<='9')
+			{
+				mul=mul*Character.getNumericValue(s.charAt(x));
+			}
+		}
+		System.out.println(mul);
+
+	}
+
+}
